@@ -15,6 +15,7 @@ func Get(message string) string {
 		return e.Error()
 	}
 	i = strings.TrimSuffix(i, "\n")
+	i = strings.TrimSuffix(i, "\r")
 	return i
 }
 
